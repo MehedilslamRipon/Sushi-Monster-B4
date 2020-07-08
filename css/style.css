@@ -1,0 +1,324 @@
+body {
+    font-family: 'Mr Dafoe', cursive;
+    color: #C9C1AC;
+    background: url(../img/body-bcg.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.info{
+    background: #C9C1AC;
+}
+.primary-color{
+    color: #D3325F;
+}
+.info-icons a{
+    transition: color 1s ease-in-out;
+}
+.info-icons a:hover{
+    color: #242424;
+    text-decoration: none;
+}
+/* header section */
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-bcg.jpeg);
+    min-height: calc(100vh - 83px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.height-90{
+    min-height: calc(100vh - 83px);
+}
+.banner h1{
+    border-top: 6px dotted #C9C1AC;
+    border-bottom: 6px dotted #C9C1AC;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.main-btn{
+    color: #D3325F;
+    font-size: 2rem;
+    border: 2px solid #D3325F;
+    transition: all 1s ease-in-out;
+}
+.main-btn:hover{
+    background: #C9C1AC;
+    border: 2px solid #C9C1AC;
+}
+.susi-btn{
+    animation-name: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    border-radius: 10px;
+    background: #C9C1AC;
+    transition: all 2s ease-in-out;
+    animation-name: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/* navbar */
+.navbar{
+    background: #C9C1AC;
+    padding: 20px 20px;
+    transition: all 1s ease-in-out;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+}
+.navbar-brand:hover{
+    color: #242424;
+}
+.nav-link{
+    color: #242424;
+    font-size: 23px;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #D3325F;
+}
+.nav-btn{
+    background: transparent;
+    color: #D3325F;
+    border: 2px solid #D3325F;
+    font-size: 23px;
+    transition: all 1s ease-in-out;
+}
+.nav-btn:hover{
+    color: #242424;
+    border: 2px solid #242424;
+    transform: rotate(10deg);
+}
+.toggler-btn{
+    border: 2px solid #d3325f;
+    padding: 5px;
+    transition: all 1s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #d3325f;
+}
+
+/* end of navbar */
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+/* end of header section */
+/* special items */
+.item-container{
+    position: relative;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.item-img{
+    transition: all 1s ease-in-out;
+}
+.item-container:hover .item-img{
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #D3325F;
+    border-top: 3px solid #D3325F;
+    border-bottom: 3px solid #D3325F;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-link:hover{
+    border: none;
+    background: #C9C1AC;
+}
+.item-container:hover{
+    outline: 10px solid #D3325F;
+    outline-offset: 0.8rem;
+}
+/* end of special items */
+/* menu section */
+#menu{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/banner-bcg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.special{
+    border: 3px solid #d3325f;
+    position: relative;
+}
+.special-text{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #D3325F;
+    padding: 0 0.4rem;
+}
+/* end of menu section */
+/* about section */
+.about-pictures{
+    position: relative;
+}
+.about-img{
+    position: absolute;
+    width: 150px;
+    transition: all 1s ease;
+    opacity: 0.9;
+}
+.img-1{
+    left: 0;
+    top: 0;
+}
+.img-2{
+    top: 25%;
+    left: 20%;
+    z-index: 10;
+}
+.img-3{
+    right: 35%;
+    top: 0;
+}
+.img-4{
+    bottom: 12%;
+    left: 0%;
+}
+.img-5{
+    bottom: 12%;
+    right: 35%;
+    z-index: 40;
+}
+.about-img:hover{
+    opacity: 1;
+    z-index: 50;
+    transform: scale(1.3) rotate(20deg);
+    outline: 7px solid #D3325F;
+    outline-offset: 0.5rem;
+}
+.about-pictures:hover .about-img:not(:hover){
+    opacity: 0.5;
+}
+/* end of about section */
+/*reviews section*/
+.review-item {
+    background: rgba(255, 255, 255, 0.7);
+    clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+  }
+  
+  .review-img {
+    width: 150px;
+  }
+  
+  .carousel-link {
+    background: red;
+  }
+/* end of reviews section*/
+/* team section */
+.team-icon a{
+    color: #3b5998;
+    transition: all 1s ease-in-out;
+}
+.team-icon a:hover{
+    color: #242424;
+    transform: translateY(-5px);
+}
+/* end of team section */
+/* contact section */
+.height-60{
+    min-height: 60vh;
+}
+.contact .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 1s ease-in-out;
+}
+.contact .card:hover{
+    background: rgba(0,0,0,0.8);
+}
+.contact .card-header{
+    color: #D3325F;
+}
+.contact .input-group-text{
+    background: #D3325F;
+    border-color: #D3325F;
+    color: #242424;
+}
+.contact .card input{
+    color: #606060;
+}
+.contact .card input::placeholder{
+    color: #606060;
+}
+/* end of contact section */
+/* footer */
+#back-to-top{
+    background: #C9C1AC;
+    border-radius: 10px;
+    border-color: #C9C1AC;
+}
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+/* end of footer */
